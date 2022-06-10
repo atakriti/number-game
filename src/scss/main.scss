@@ -1,10 +1,15 @@
 @import "./welcome-page";
+@import "./level1";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
 }
-
+body{
+    background-color: black;
+}
 .body-dark{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.548);
@@ -14,24 +19,6 @@
     left: 0;
     display: none; // ========================
 }
-.level1{
-    display: none;
-}
-.container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.container div{
-    border: 1px red solid;
-    width: 7rem;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2%;
-    cursor: pointer;
-}
-span{
-    font-size: 1rem;
-}
+// .level1{
+//     // display: none;
+// }

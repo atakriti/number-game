@@ -14,17 +14,29 @@
         <div class="welcome-container">
             <h1>Welcome to My Game</h1>
             <h2>Please enter your name</h2>
-            <form >
+            <form id="formWelcome">
                 <input required minlength="4" placeholder="First name" type="text" name="text" id="welcome-input">
                 <input type="button" value="Submit">
             </form>
         </div>
     </div>
+    <!-- ================== Loading gif ================= -->
+    <div class="loading">
+        <div class="loading-container">
+            <a >
+                <img src="./images/loading-90.gif" alt="">
+            </a>
+        </div>
+    </div>
    <!-- =================== Level One =================== -->
    <div class="level1">
-    <strong class="timer1"></strong>
-        <h1>Anwar's Game</h1>
-        <h2>The Number is: <span>Choose a number </span> <strong></strong></h2>
+    
+        <h1>Hello <span class="userName">anwar</span> Welcome to Level 1</h1>
+        <h2>The Number is: <span class="number">Choose a number </span> <strong></strong></h2>
+        <div class="timer-container">
+            <p>CountDown</p>
+            <strong class="timer1"></strong>
+        </div>
         <!-- ======= -->
         <section class="container"></section>
    </div>
