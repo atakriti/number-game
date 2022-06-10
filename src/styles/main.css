@@ -1,0 +1,91 @@
+.welcome-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.welcome-page .welcome-container {
+  width: 60%;
+  background: linear-gradient(to right, black, darkred);
+  border-radius: 30px;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-page .welcome-container h1 {
+  margin-bottom: 20%;
+  font-size: 4vw;
+  color: white;
+}
+.welcome-page .welcome-container h2 {
+  margin-bottom: 5%;
+  font-size: 2vw;
+  color: white;
+}
+.welcome-page .welcome-container form {
+  border: 1px gray solid;
+  border-radius: 20px;
+  width: 80%;
+  display: flex;
+  box-shadow: 2px 1px 5px rgb(92, 92, 92);
+}
+.welcome-page .welcome-container form input {
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+.welcome-page .welcome-container form input:nth-child(1) {
+  padding: 2% 4%;
+  flex: 1;
+  border: none;
+}
+.welcome-page .welcome-container form input:nth-child(2) {
+  padding: 3.5% 1%;
+  border-radius: 50%;
+  font-size: 1vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-dark {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.548);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.level1 {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container div {
+  border: 1px red solid;
+  width: 7rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  cursor: pointer;
+}
+
+span {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
