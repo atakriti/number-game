@@ -43,17 +43,20 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 10%;
-}
-.container div{
-    width: 5rem;
-    padding: 2% 0;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2%;
-    cursor: pointer;
-    background-color: white;
-    border-radius: 20px;
+    .movedElement{
+        display: none;
+    }
+    div{
+        width: 5rem;
+        padding: 2% 0;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 20px;
+    }
 }
 
 }

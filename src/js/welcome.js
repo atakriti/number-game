@@ -1,5 +1,5 @@
 let level1 = document.querySelector(".level1")
-level1.style.display = "block"
+// level1.style.display = "none"
 let welcomePage = document.querySelector(".welcome-page")
 welcomePage.style.display = "none"
 let loading = document.querySelector(".loading")

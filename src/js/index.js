@@ -2,7 +2,9 @@ let container = document.querySelector(".container");
 let span = document.querySelector(".number");
 let empty = "";
 let strong = document.querySelector(".timer1");
+let movedElement = document.querySelector(".movedElement")
 function level1Fun() {
+  // let moved = document.createElement("article")
   for (let i = 0; i < 25; i++) {
     let div = document.createElement("div");
     let random = Math.ceil(Math.random() * 10);
@@ -21,7 +23,12 @@ function level1Fun() {
         // span.innerHTML = empty
       }
       if (empty === e.target.innerText) {
-        div.remove();
+  movedElement.appendChild(div)        
+        // moved.append(div)
+        // console.log(moved)
+
+        document.getElementById("test").innerHTML = movedElement.innerHTML.length
+        // div.remove();
       } else {
         span.innerHTML = "Wrong!, try again";
         span.style.color = "red";
@@ -29,20 +36,29 @@ function level1Fun() {
       if (!empty == random) {
         alert("hello");
       }
+
+
+      // if (movedElement.innerHTML.length > 20) {
+      //   alert("loos")
+      // }
+
+
+      // we need to create a btn to go to the next level and till the last one then we show if the length less than 100 than its kinda good if more than its very good
     });
+    
   }
 }
 level1Fun();
 
-let timeVariable = 5
-setInterval(() => {
-   strong.innerHTML = timeVariable--
-    if (strong.innerHTML == 0) {
-      strong.remove()
-        // timerVar = 5
-    }
+// let timeVariable = 5
+// setInterval(() => {
+//    strong.innerHTML = timeVariable--
+//     if (strong.innerHTML == 0) {
+//       strong.remove()
+//         // timerVar = 5
+//     }
 
-},1000)
+// },1000)
 
 
 

@@ -115,6 +115,9 @@
   flex-wrap: wrap;
   margin-top: 10%;
 }
+.level1 .container .movedElement {
+  display: none;
+}
 .level1 .container div {
   width: 5rem;
   padding: 2% 0;
