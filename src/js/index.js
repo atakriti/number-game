@@ -106,8 +106,8 @@ function timerFunction() {
   if (strong.innerHTML == 0) {
     strong.remove()
      timeOut.style.display = "block"
-     setTimeout(() => (timeOut.style.display = "none"),2000)
-     setTimeout(() => (container.style.display = "none"),2000)
+     setTimeout(() => (timeOut.style.display = "none"),1000)
+     setTimeout(() => (container.style.display = "none"),1000)
        // timerVar = 5
    }
  
