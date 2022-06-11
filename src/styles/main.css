@@ -97,6 +97,7 @@
   background-color: transparent;
   outline: none;
   color: white;
+  font-size: 1.2vw;
 }
 .welcome-page .welcome-inner .welcome-container form input:nth-child(1) {
   padding: 2% 4%;
@@ -274,8 +275,9 @@
   font-size: 4vw;
 }
 .result .result-container .result-inner h2 {
-  color: white;
+  color: orange;
   font-size: 2vw;
+  text-transform: uppercase;
 }
 .result .result-container .result-inner .resultPoints {
   display: flex;

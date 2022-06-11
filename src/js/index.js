@@ -106,7 +106,8 @@ function timerFunction() {
   if (strong.innerHTML == 0) {
     strong.remove()
      timeOut.style.display = "block"
-     setTimeout(() => (timeOut.style.display = "none"),1000)
+     setTimeout(() => (timeOut.style.display = "none"),2000)
+     setTimeout(() => (container.style.display = "none"),2000)
        // timerVar = 5
    }
  
@@ -165,7 +166,9 @@ function timerFunction2() {
   if (strong2.innerHTML == 0) {
     strong2.remove()
      timeOut.style.display = "block"
-    setTimeout(() => (timeOut.style.display = "none"), 1000)
+    setTimeout(() => (timeOut.style.display = "none"), 2000)
+    setTimeout(() => (container2.style.display = "none"),2000)
+
     
        // timerVar = 5
    }
@@ -216,7 +219,7 @@ function level3Fun() {
 level3Fun()
 // =========================== end level3 ==================
 // =============== level2 timer ==============
-let timeVariable3 = 15
+let timeVariable3 = 18
 
 function timerFunction3() {
   
@@ -226,7 +229,9 @@ function timerFunction3() {
   if (strong3.innerHTML == 0) {
     strong3.remove()
      timeOut.style.display = "block"
-     setTimeout(() => (timeOut.style.display = "none"),1000)
+    setTimeout(() => (timeOut.style.display = "none"), 2000)
+    setTimeout(() => (container3.style.display = "none"),2000)
+    
        // timerVar = 5
    }
  
