@@ -298,7 +298,7 @@
   width: 100%;
 }
 .result .result-container .result-inner .resultPoints .resultSpan {
-  color: white;
+  color: orange;
   font-size: 3.5vw;
 }
 .result .result-container .result-inner .resultPoints .points {
