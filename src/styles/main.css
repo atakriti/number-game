@@ -129,6 +129,12 @@
   cursor: pointer;
   background-color: white;
   border-radius: 20px;
+  transition: 0.7s;
+}
+.level1 .container div:hover, .level1 .container2 div:hover, .level1 .container3 div:hover, .level2 .container div:hover, .level2 .container2 div:hover, .level2 .container3 div:hover, .level3 .container div:hover, .level3 .container2 div:hover, .level3 .container3 div:hover {
+  transition: 0.7s;
+  background-color: gray;
+  color: white;
 }
 .level1 #next, .level1 #next2, .level1 #next3, .level2 #next, .level2 #next2, .level2 #next3, .level3 #next, .level3 #next2, .level3 #next3 {
   background-color: white;
@@ -231,11 +237,11 @@
   transition: 0.7s;
   color: white;
 }
-.result .result-container .result-inner button:nth-child(4):hover {
+.result .result-container .result-inner button:nth-child(5):hover {
   background-color: green;
   transition: 0.7s;
 }
-.result .result-container .result-inner button:nth-child(5):hover {
+.result .result-container .result-inner button:nth-child(6):hover {
   background-color: red;
   transition: 0.7s;
 }

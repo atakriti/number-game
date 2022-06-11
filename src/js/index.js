@@ -17,7 +17,7 @@ let resultSpan = document.querySelector(".resultSpan")
 // let movedElement2 = document.querySelector(".movedElement2")
 // ===================
 let level1 = document.querySelector(".level1")
-// level1.style.display = "none"
+level1.style.display = "none"
 let level2 = document.querySelector(".level2")
 level2.style.display = "none"
 let level3 = document.querySelector(".level3")
@@ -27,7 +27,7 @@ welcomePage.style.display = "none"
 let loading = document.querySelector(".loading")
 loading.style.display = "none"
 let result = document.querySelector(".result")
-result.style.display = "none"
+// result.style.display = "none"
 
 let yesBtn = document.getElementById("yesBtn")
 let noBtn = document.getElementById("noBtn")
@@ -35,7 +35,7 @@ let nextBtn = document.querySelector("#next")
 let nextBtn2 = document.querySelector("#next2")
 let nextBtn3 = document.querySelector("#next3")
 let timeOut = document.querySelector(".timeOut")
-// timeOut.style.display = "none"
+timeOut.style.display = "none"
 // ======================= level one Function ======================
 function level1Fun() {
   for (let i = 0; i < 25; i++) {
@@ -75,28 +75,28 @@ function level1Fun() {
 level1Fun();
 // =================================== end level1 =====================
 // ============================ timecounter ================
-// let timeVariable = 2
+let timeVariable = 20
 
-// function timerFunction() {
+function timerFunction() {
   
-//     strong.innerHTML = timeVariable--
+    strong.innerHTML = timeVariable--
    
   
-//   if (strong.innerHTML == 0) {
-//     strong.remove()
-//      timeOut.style.display = "block"
-//      setTimeout(() => (timeOut.style.display = "none"),5000)
-//        // timerVar = 5
-//    }
+  if (strong.innerHTML == 0) {
+    strong.remove()
+     timeOut.style.display = "block"
+     setTimeout(() => (timeOut.style.display = "none"),5000)
+       // timerVar = 5
+   }
  
-// }
-// function timerCall() {
-//   if (level1.style.display === "block") {
-//     timerFunction()
-//   }
-// }
+}
+function timerCall() {
+  if (level1.style.display === "block") {
+    timerFunction()
+  }
+}
 
-// setInterval(timerCall, 1000)
+setInterval(timerCall, 1000)
 // ==================== end timecounter ===================
 // ==================== level2 =================================
 function level2Fun() {
@@ -134,28 +134,29 @@ function level2Fun() {
 level2Fun();
 // ==================== end Level2 ==========================
 // =============== level2 timer ==============
-// let timeVariable2 = 2
+let timeVariable2 = 15
 
-// function timerFunction2() {
+function timerFunction2() {
   
-//     strong2.innerHTML = timeVariable2--
+    strong2.innerHTML = timeVariable2--
    
   
-//   if (strong2.innerHTML == 0) {
-//     strong2.remove()
-//      timeOut.style.display = "block"
-//      setTimeout(() => (timeOut.style.display = "none"),5000)
-//        // timerVar = 5
-//    }
+  if (strong2.innerHTML == 0) {
+    strong2.remove()
+     timeOut.style.display = "block"
+    setTimeout(() => (timeOut.style.display = "none"), 5000)
+    
+       // timerVar = 5
+   }
  
-// }
-// function timerCall2() {
-//   if (level2.style.display === "block") {
-//     timerFunction2()
-//   }
-// }
+}
+function timerCall2() {
+  if (level2.style.display === "block") {
+    timerFunction2()
+  }
+}
 
-// setInterval(timerCall2, 1000)
+setInterval(timerCall2, 1000)
 // ============================================
 // ============================== level 3 =====================
 function level3Fun() {
@@ -194,28 +195,28 @@ function level3Fun() {
 level3Fun()
 // =========================== end level3 ==================
 // =============== level2 timer ==============
-// let timeVariable3 = 2
+let timeVariable3 = 13
 
-// function timerFunction3() {
+function timerFunction3() {
   
-//     strong3.innerHTML = timeVariable3--
+    strong3.innerHTML = timeVariable3--
    
   
-//   if (strong3.innerHTML == 0) {
-//     strong3.remove()
-//      timeOut.style.display = "block"
-//      setTimeout(() => (timeOut.style.display = "none"),5000)
-//        // timerVar = 5
-//    }
+  if (strong3.innerHTML == 0) {
+    strong3.remove()
+     timeOut.style.display = "block"
+     setTimeout(() => (timeOut.style.display = "none"),5000)
+       // timerVar = 5
+   }
  
-// }
-// function timerCall3() {
-//   if (level3.style.display === "block") {
-//     timerFunction3()
-//   }
-// }
+}
+function timerCall3() {
+  if (level3.style.display === "block") {
+    timerFunction3()
+  }
+}
 
-// setInterval(timerCall3, 1000)
+setInterval(timerCall3, 1000)
 // ============================================
 // ===================== welcome function ======================
 function welcome(e) {
@@ -234,8 +235,7 @@ function welcome(e) {
 document.getElementById("formWelcome").addEventListener("submit", welcome)
 
 // ========================= Result ======================
-// function resultFunction() {
-//   resultSpan.innerHTML += movedElement.innerHTML.length
-//   console.log(movedElement)
-// }
-// resultFunction()
+// yesBtn.addEventListener("click", () => {
+//   result.remove()
+//   welcomePage.style.display = "block"
+// })
