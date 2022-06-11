@@ -61,6 +61,9 @@
   margin-bottom: 10%;
   font-size: 2.5vw;
 }
+.instructions .in-container .inner-in .in-text p span:nth-child(2) {
+  margin-bottom: 1%;
+}
 
 .welcome-page {
   height: 100vh;
@@ -293,11 +296,11 @@
 }
 .result .result-container .result-inner .resultPoints .resultSpan {
   color: white;
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 .result .result-container .result-inner .resultPoints .points {
   color: white;
-  font-size: 3vw;
+  font-size: 2.7vw;
 }
 .result .result-container .result-inner button {
   background-color: transparent;

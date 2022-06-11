@@ -198,9 +198,7 @@ function level3Fun() {
       }
       if (empty3 === e.target.innerText) {
         movedElement.appendChild(div)
-        console.log(movedElement)
         resultSpan.innerHTML = movedElement.innerHTML.length
-        console.log(resultSpan)
 
       } else {
         span3.innerHTML = "Wrong!, try again";
