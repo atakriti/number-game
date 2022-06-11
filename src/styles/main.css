@@ -69,31 +69,31 @@
   height: 100%;
 }
 
-.level1, .level2 {
+.level1, .level2, .level3 {
   background: linear-gradient(to right, black, darkred);
   padding-top: 5%;
   min-height: 100vh;
 }
-.level1 h1, .level2 h1 {
+.level1 h1, .level2 h1, .level3 h1 {
   text-align: center;
   margin-bottom: 3%;
   font-size: 1.7rem;
   color: white;
 }
-.level1 h1 .userName, .level2 h1 .userName {
+.level1 h1 .userName, .level2 h1 .userName, .level3 h1 .userName {
   font-size: 1.8rem;
   color: gray;
 }
-.level1 h2, .level2 h2 {
+.level1 h2, .level2 h2, .level3 h2 {
   text-align: center;
   margin-bottom: 3%;
   font-size: 1rem;
   color: white;
 }
-.level1 h2 .number, .level1 h2 .number2, .level2 h2 .number, .level2 h2 .number2 {
+.level1 h2 .number, .level1 h2 .number2, .level1 h2 .number3, .level2 h2 .number, .level2 h2 .number2, .level2 h2 .number3, .level3 h2 .number, .level3 h2 .number2, .level3 h2 .number3 {
   font-size: 1rem;
 }
-.level1 .timer-container, .level1 .timer-container2, .level2 .timer-container, .level2 .timer-container2 {
+.level1 .timer-container, .level1 .timer-container2, .level1 .timer-container3, .level2 .timer-container, .level2 .timer-container2, .level2 .timer-container3, .level3 .timer-container, .level3 .timer-container2, .level3 .timer-container3 {
   text-align: center;
   width: 15rem;
   margin: 0 auto;
@@ -102,24 +102,24 @@
   padding: 1% 2%;
   line-height: 2;
 }
-.level1 .timer-container p, .level1 .timer-container2 p, .level2 .timer-container p, .level2 .timer-container2 p {
+.level1 .timer-container p, .level1 .timer-container2 p, .level1 .timer-container3 p, .level2 .timer-container p, .level2 .timer-container2 p, .level2 .timer-container3 p, .level3 .timer-container p, .level3 .timer-container2 p, .level3 .timer-container3 p {
   font-size: 0.9rem;
   color: white;
 }
-.level1 .timer-container strong, .level1 .timer-container2 strong, .level2 .timer-container strong, .level2 .timer-container2 strong {
+.level1 .timer-container strong, .level1 .timer-container2 strong, .level1 .timer-container3 strong, .level2 .timer-container strong, .level2 .timer-container2 strong, .level2 .timer-container3 strong, .level3 .timer-container strong, .level3 .timer-container2 strong, .level3 .timer-container3 strong {
   font-size: 1rem;
   color: red;
 }
-.level1 .container, .level1 .container2, .level2 .container, .level2 .container2 {
+.level1 .container, .level1 .container2, .level1 .container3, .level2 .container, .level2 .container2, .level2 .container3, .level3 .container, .level3 .container2, .level3 .container3 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 10%;
 }
-.level1 .container .movedElement, .level1 .container2 .movedElement, .level2 .container .movedElement, .level2 .container2 .movedElement {
+.level1 .container .movedElement, .level1 .container2 .movedElement, .level1 .container3 .movedElement, .level2 .container .movedElement, .level2 .container2 .movedElement, .level2 .container3 .movedElement, .level3 .container .movedElement, .level3 .container2 .movedElement, .level3 .container3 .movedElement {
   display: none;
 }
-.level1 .container div, .level1 .container2 div, .level2 .container div, .level2 .container2 div {
+.level1 .container div, .level1 .container2 div, .level1 .container3 div, .level2 .container div, .level2 .container2 div, .level2 .container3 div, .level3 .container div, .level3 .container2 div, .level3 .container3 div {
   width: 5rem;
   padding: 2% 0;
   display: flex;
@@ -130,7 +130,7 @@
   background-color: white;
   border-radius: 20px;
 }
-.level1 #next, .level1 #next2, .level2 #next, .level2 #next2 {
+.level1 #next, .level1 #next2, .level1 #next3, .level2 #next, .level2 #next2, .level2 #next3, .level3 #next, .level3 #next2, .level3 #next3 {
   background-color: white;
   color: red;
   padding: 1% 3%;
@@ -141,7 +141,7 @@
   cursor: pointer;
   transition: 0.7s;
 }
-.level1 #next:hover, .level1 #next2:hover, .level2 #next:hover, .level2 #next2:hover {
+.level1 #next:hover, .level1 #next2:hover, .level1 #next3:hover, .level2 #next:hover, .level2 #next2:hover, .level2 #next3:hover, .level3 #next:hover, .level3 #next2:hover, .level3 #next3:hover {
   transition: 0.7s;
   background-color: darkred;
   color: white;
@@ -169,6 +169,65 @@
 }
 .timeOut .timeOut-inner .timeOut-container h1 {
   color: white;
+}
+
+.result {
+  height: 100vh;
+  background-color: black;
+}
+.result .result-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result .result-container .result-inner {
+  background: linear-gradient(to right, black, darkred);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 7%;
+  line-height: 2;
+  border-radius: 5px;
+}
+.result .result-container .result-inner h1 {
+  color: white;
+  font-size: 4vw;
+}
+.result .result-container .result-inner h2 {
+  color: white;
+  font-size: 2vw;
+}
+.result .result-container .result-inner .resultSpan {
+  color: white;
+  font-size: 4vw;
+}
+.result .result-container .result-inner p {
+  color: white;
+  font-size: 1.5vw;
+}
+.result .result-container .result-inner button {
+  background-color: transparent;
+  border: 1px white solid;
+  padding: 3% 0%;
+  width: 50%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.7s;
+  color: white;
+}
+.result .result-container .result-inner button:nth-child(4):hover {
+  background-color: green;
+  transition: 0.7s;
+}
+.result .result-container .result-inner button:nth-child(5):hover {
+  background-color: red;
+  transition: 0.7s;
 }
 
 * {
