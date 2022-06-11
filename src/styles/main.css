@@ -35,6 +35,7 @@
   color: white;
   font-weight: bold;
   transition: 0.7s;
+  font-size: 1.5vw;
   cursor: pointer;
 }
 .instructions .in-container .inner-in button:hover {
@@ -151,22 +152,22 @@
 .level1 h1, .level2 h1, .level3 h1 {
   text-align: center;
   margin-bottom: 3%;
-  font-size: 1.7rem;
+  font-size: 3rem;
   color: white;
 }
 .level1 h1 .userName, .level2 h1 .userName, .level3 h1 .userName {
-  font-size: 1.8rem;
+  font-size: 3rem;
   color: orange;
   text-transform: uppercase;
 }
 .level1 h2, .level2 h2, .level3 h2 {
   text-align: center;
   margin-bottom: 3%;
-  font-size: 1rem;
+  font-size: 2rem;
   color: white;
 }
 .level1 h2 .number, .level1 h2 .number2, .level1 h2 .number3, .level2 h2 .number, .level2 h2 .number2, .level2 h2 .number3, .level3 h2 .number, .level3 h2 .number2, .level3 h2 .number3 {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 .level1 .timer-container, .level1 .timer-container2, .level1 .timer-container3, .level2 .timer-container, .level2 .timer-container2, .level2 .timer-container3, .level3 .timer-container, .level3 .timer-container2, .level3 .timer-container3 {
   text-align: center;
@@ -180,11 +181,11 @@
   top: 0;
 }
 .level1 .timer-container p, .level1 .timer-container2 p, .level1 .timer-container3 p, .level2 .timer-container p, .level2 .timer-container2 p, .level2 .timer-container3 p, .level3 .timer-container p, .level3 .timer-container2 p, .level3 .timer-container3 p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: white;
 }
 .level1 .timer-container strong, .level1 .timer-container2 strong, .level1 .timer-container3 strong, .level2 .timer-container strong, .level2 .timer-container2 strong, .level2 .timer-container3 strong, .level3 .timer-container strong, .level3 .timer-container2 strong, .level3 .timer-container3 strong {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: red;
 }
 .level1 .container, .level1 .container2, .level1 .container3, .level2 .container, .level2 .container2, .level2 .container3, .level3 .container, .level3 .container2, .level3 .container3 {
@@ -197,7 +198,7 @@
   display: none;
 }
 .level1 .container div, .level1 .container2 div, .level1 .container3 div, .level2 .container div, .level2 .container2 div, .level2 .container3 div, .level3 .container div, .level3 .container2 div, .level3 .container3 div {
-  width: 5rem;
+  width: 7rem;
   padding: 2% 0;
   display: flex;
   justify-content: center;
@@ -207,6 +208,7 @@
   background-color: white;
   border-radius: 20px;
   transition: 0.7s;
+  font-size: 2rem;
 }
 .level1 .container div:hover, .level1 .container2 div:hover, .level1 .container3 div:hover, .level2 .container div:hover, .level2 .container2 div:hover, .level2 .container3 div:hover, .level3 .container div:hover, .level3 .container2 div:hover, .level3 .container3 div:hover {
   transition: 0.7s;
@@ -223,6 +225,7 @@
   border-radius: 20px;
   cursor: pointer;
   transition: 0.7s;
+  font-size: 1.6rem;
 }
 .level1 #next:hover, .level1 #next2:hover, .level1 #next3:hover, .level2 #next:hover, .level2 #next2:hover, .level2 #next3:hover, .level3 #next:hover, .level3 #next2:hover, .level3 #next3:hover {
   transition: 0.7s;
@@ -324,6 +327,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inconsolata", monospace;
+  user-select: none;
 }
 
 .body-dark {
