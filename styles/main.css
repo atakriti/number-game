@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+.instructions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.904);
+}
+.instructions .in-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instructions .in-container .inner-in {
+  color: white;
+  width: 50%;
+  background: linear-gradient(to right, black, darkred);
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+.instructions .in-container .inner-in button {
+  width: 10%;
+  padding: 1% 0;
+  border: 1px white solid;
+  background-color: transparent;
+  outline: none;
+  margin-bottom: 3%;
+  border-radius: 40px;
+  color: white;
+  font-weight: bold;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.instructions .in-container .inner-in button:hover {
+  transition: 0.7s;
+  background-color: orange;
+}
+.instructions .in-container .inner-in .in-text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2vw;
+}
+.instructions .in-container .inner-in .in-text p {
+  display: flex;
+  flex-direction: column;
+}
+.instructions .in-container .inner-in .in-text p b {
+  color: orange;
+  margin-top: 10%;
+}
+.instructions .in-container .inner-in .in-text p span {
+  color: orange;
+  font-weight: bold;
+  margin-bottom: 10%;
+  font-size: 2.5vw;
+}
+.instructions .in-container .inner-in .in-text p span:nth-child(2) {
+  margin-bottom: 1%;
+}
+
+.welcome-page {
+  height: 100vh;
+  background-color: black;
+}
+.welcome-page .welcome-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.welcome-page .welcome-inner .welcome-container {
+  width: 60%;
+  background: linear-gradient(to right, black, darkred);
+  border-radius: 30px;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-page .welcome-inner .welcome-container h1 {
+  margin-bottom: 20%;
+  font-size: 4vw;
+  color: white;
+}
+.welcome-page .welcome-inner .welcome-container h2 {
+  margin-bottom: 5%;
+  font-size: 2vw;
+  color: white;
+}
+.welcome-page .welcome-inner .welcome-container form {
+  border: 1px gray solid;
+  border-radius: 20px;
+  width: 80%;
+  display: flex;
+  box-shadow: 2px 1px 5px rgb(92, 92, 92);
+}
+.welcome-page .welcome-inner .welcome-container form input {
+  background-color: transparent;
+  outline: none;
+  color: white;
+  font-size: 1.2vw;
+}
+.welcome-page .welcome-inner .welcome-container form input:nth-child(1) {
+  padding: 2% 4%;
+  flex: 1;
+  border: none;
+}
+.welcome-page .welcome-inner .welcome-container form input:nth-child(2) {
+  padding: 3.5% 1%;
+  border-radius: 50%;
+  font-size: 1vw;
+}
+
+.loading, .loading2, .loading3, .loading4 {
+  width: 100%;
+  background-color: black;
+  height: 100vh;
+  position: relative;
+  z-index: 50;
+}
+.loading .loading-container, .loading .loading2-container, .loading .loading3-container, .loading .loading4-container, .loading2 .loading-container, .loading2 .loading2-container, .loading2 .loading3-container, .loading2 .loading4-container, .loading3 .loading-container, .loading3 .loading2-container, .loading3 .loading3-container, .loading3 .loading4-container, .loading4 .loading-container, .loading4 .loading2-container, .loading4 .loading3-container, .loading4 .loading4-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading .loading-container a, .loading .loading2-container a, .loading .loading3-container a, .loading .loading4-container a, .loading2 .loading-container a, .loading2 .loading2-container a, .loading2 .loading3-container a, .loading2 .loading4-container a, .loading3 .loading-container a, .loading3 .loading2-container a, .loading3 .loading3-container a, .loading3 .loading4-container a, .loading4 .loading-container a, .loading4 .loading2-container a, .loading4 .loading3-container a, .loading4 .loading4-container a {
+  display: flex;
+  width: 20%;
+}
+.loading .loading-container a img, .loading .loading2-container a img, .loading .loading3-container a img, .loading .loading4-container a img, .loading2 .loading-container a img, .loading2 .loading2-container a img, .loading2 .loading3-container a img, .loading2 .loading4-container a img, .loading3 .loading-container a img, .loading3 .loading2-container a img, .loading3 .loading3-container a img, .loading3 .loading4-container a img, .loading4 .loading-container a img, .loading4 .loading2-container a img, .loading4 .loading3-container a img, .loading4 .loading4-container a img {
+  width: 100%;
+  height: 100%;
+}
+
+.level1, .level2, .level3 {
+  background: linear-gradient(to right, black, darkred);
+  padding-top: 5%;
+  min-height: 100vh;
+  position: relative;
+}
+.level1 h1, .level2 h1, .level3 h1 {
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: 1.7rem;
+  color: white;
+}
+.level1 h1 .userName, .level2 h1 .userName, .level3 h1 .userName {
+  font-size: 1.8rem;
+  color: orange;
+  text-transform: uppercase;
+}
+.level1 h2, .level2 h2, .level3 h2 {
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: 1rem;
+  color: white;
+}
+.level1 h2 .number, .level1 h2 .number2, .level1 h2 .number3, .level2 h2 .number, .level2 h2 .number2, .level2 h2 .number3, .level3 h2 .number, .level3 h2 .number2, .level3 h2 .number3 {
+  font-size: 1rem;
+}
+.level1 .timer-container, .level1 .timer-container2, .level1 .timer-container3, .level2 .timer-container, .level2 .timer-container2, .level2 .timer-container3, .level3 .timer-container, .level3 .timer-container2, .level3 .timer-container3 {
+  text-align: center;
+  width: 15rem;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.158);
+  border-radius: 20px;
+  padding: 1% 2%;
+  line-height: 2;
+  position: sticky;
+  top: 0;
+}
+.level1 .timer-container p, .level1 .timer-container2 p, .level1 .timer-container3 p, .level2 .timer-container p, .level2 .timer-container2 p, .level2 .timer-container3 p, .level3 .timer-container p, .level3 .timer-container2 p, .level3 .timer-container3 p {
+  font-size: 0.9rem;
+  color: white;
+}
+.level1 .timer-container strong, .level1 .timer-container2 strong, .level1 .timer-container3 strong, .level2 .timer-container strong, .level2 .timer-container2 strong, .level2 .timer-container3 strong, .level3 .timer-container strong, .level3 .timer-container2 strong, .level3 .timer-container3 strong {
+  font-size: 1rem;
+  color: red;
+}
+.level1 .container, .level1 .container2, .level1 .container3, .level2 .container, .level2 .container2, .level2 .container3, .level3 .container, .level3 .container2, .level3 .container3 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+.level1 .container .movedElement, .level1 .container2 .movedElement, .level1 .container3 .movedElement, .level2 .container .movedElement, .level2 .container2 .movedElement, .level2 .container3 .movedElement, .level3 .container .movedElement, .level3 .container2 .movedElement, .level3 .container3 .movedElement {
+  display: none;
+}
+.level1 .container div, .level1 .container2 div, .level1 .container3 div, .level2 .container div, .level2 .container2 div, .level2 .container3 div, .level3 .container div, .level3 .container2 div, .level3 .container3 div {
+  width: 5rem;
+  padding: 2% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.7s;
+}
+.level1 .container div:hover, .level1 .container2 div:hover, .level1 .container3 div:hover, .level2 .container div:hover, .level2 .container2 div:hover, .level2 .container3 div:hover, .level3 .container div:hover, .level3 .container2 div:hover, .level3 .container3 div:hover {
+  transition: 0.7s;
+  background-color: orange;
+  transform: scale(1.2);
+}
+.level1 #next, .level1 #next2, .level1 #next3, .level2 #next, .level2 #next2, .level2 #next3, .level3 #next, .level3 #next2, .level3 #next3 {
+  background-color: white;
+  color: red;
+  padding: 1% 3%;
+  margin: 2%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.level1 #next:hover, .level1 #next2:hover, .level1 #next3:hover, .level2 #next:hover, .level2 #next2:hover, .level2 #next3:hover, .level3 #next:hover, .level3 #next2:hover, .level3 #next3:hover {
+  transition: 0.7s;
+  background-color: darkred;
+  color: white;
+}
+
+.timeOut {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+.timeOut .timeOut-inner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+.timeOut .timeOut-inner .timeOut-container {
+  padding: 10%;
+  border-radius: 20px;
+  background: linear-gradient(to right, black, darkred);
+}
+.timeOut .timeOut-inner .timeOut-container h1 {
+  color: white;
+}
+
+.result {
+  height: 100vh;
+  position: relative;
+  z-index: 60;
+  background-color: black;
+}
+.result .result-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result .result-container .result-inner {
+  background: linear-gradient(to right, black, darkred);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 7%;
+  line-height: 2;
+  border-radius: 5px;
+}
+.result .result-container .result-inner h1 {
+  color: white;
+  font-size: 4vw;
+}
+.result .result-container .result-inner h2 {
+  color: orange;
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+.result .result-container .result-inner .resultPoints {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.result .result-container .result-inner .resultPoints .resultSpan {
+  color: white;
+  font-size: 3.5vw;
+}
+.result .result-container .result-inner .resultPoints .points {
+  color: white;
+  font-size: 2.7vw;
+}
+.result .result-container .result-inner button {
+  background-color: transparent;
+  border: 1px white solid;
+  padding: 5% 0%;
+  width: 100%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.7s;
+  color: white;
+  font-size: 1.4vw;
+}
+.result .result-container .result-inner button:hover {
+  background-color: orange;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+
+.body-dark {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.548);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

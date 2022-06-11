@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Mahjong</title>
+</head>
+<body>
+    <div class="body-dark"></div>
+    <!-- ============================= instructions ================ -->
+    <div class="instructions">
+        <div class="in-container">
+            <div class="inner-in">
+                <button class="close">x</button>
+                <div class="in-text">
+                    <p>
+                        <span>Instructions</span>
+                        <span>Welcome to my game</span> <br>
+                        In this game you will have 3 levels from easy to hard. <br> 
+                        You have a timer, when the time is out the numbers will disappear, you must pick up the most repeated number 
+                        
+                        in order to collect more points, and at the end you will navigate to the result to see how much points did you get. <br>
+                        <b>Enjoy the game.</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================== Welcome Page ================== -->
+    <div class="welcome-page">
+        <div class="welcome-inner">
+            <div class="welcome-container">
+                <h1>Welcome to My Game</h1>
+                <h2>Please enter your name</h2>
+                <form id="formWelcome">
+                    <input required minlength="4" placeholder="First name" type="text" name="text" id="welcome-input">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ================== Loading gif ================= -->
+    <div class="loading">
+        <div class="loading-container">
+            <a >
+                <img src="./images/loading-90.gif" alt="">
+            </a>
+        </div>
+    </div>
+   <!-- =================== Level One =================== -->
+   <div class="level1">
+    
+        <h1>Hello <span class="userName">anwar</span> Welcome to Level 1</h1>
+        <h2>The Number is: <span class="number">Choose a number </span> <strong></strong></h2>
+        <div class="timer-container">
+            <p id="test">CountDown</p>
+            <strong class="timer1"></strong>
+        </div>
+        <!-- ======= -->
+        
+        <section class="container">
+            <div class="movedElement"></div>
+        </section>
+        <button id="next">Next Level</button>
+   </div>
+   <!-- ======================= Time out ================= -->
+   <div class="timeOut">
+       <div class="timeOut-inner">
+           <div class="timeOut-container">
+               <h1>Time is out !</h1>
+           </div>
+       </div>
+   </div>
+    <!-- ================== Loading2 gif ================= -->
+    <div class="loading2">
+        <div class="loading2-container">
+            <a >
+                <img src="./images/loading-90.gif" alt="">
+            </a>
+        </div>
+    </div>
+   
+   <!-- ==================== Level Two ================= -->
+   <div class="level2">
+    
+    <h1>Welcome to Level 2</h1>
+    <h2>The Number is: <span class="number2">Choose a number </span> <strong></strong></h2>
+    <div class="timer-container2">
+        <p id="test2">CountDown</p>
+        <strong class="timer2"></strong>
+    </div>
+    <!-- ======= -->
+    
+    <section class="container2">
+        <!-- <div class="movedElement2"></div> -->
+    </section>
+    <button id="next2">Next Level</button>
+</div>
+ <!-- ================== Loading3 gif ================= -->
+ <div class="loading3">
+    <div class="loading3-container">
+        <a >
+            <img src="./images/loading-90.gif" alt="">
+        </a>
+    </div>
+</div>
+<!-- ======================== level three ================ -->
+<div class="level3">
+    
+    <h1>Welcome to Level 3</h1>
+    <h2>The Number is: <span class="number3">Choose a number </span> <strong></strong></h2>
+    <div class="timer-container3">
+        <p id="test3">CountDown</p>
+        <strong class="timer3"></strong>
+    </div>
+    <!-- ======= -->
+    
+    <section class="container3">
+        <!-- <div class="movedElement2"></div> -->
+    </section>
+    <button id="next3">Result</button>
+</div>
+ <!-- ================== Loading4 gif ================= -->
+ <div class="loading4">
+    <div class="loading4-container">
+        <a >
+            <img src="./images/loading-90.gif" alt="">
+        </a>
+    </div>
+</div>
+<!-- ========================= Result ==================== -->
+<div class="result">
+    <div class="result-container">
+       <div class="result-inner">
+            <h1>Result</h1>
+            <h2 class="userNameResult"></h2>
+           <div class="resultPoints">
+                <span class="resultSpan">0</span>
+                <span class="points">Points</span>
+           </div>
+           
+            <button id="yesBtn">Play again!</button>
+       </div>
+
+    </div>
+</div>
+
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/welcome.js"></script> -->
+</body>
+</html>
