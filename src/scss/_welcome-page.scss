@@ -46,6 +46,9 @@
         p{
           display: flex;
           flex-direction: column;
+          height: 20rem;
+          overflow-x: hidden;
+          overflow-y: scroll;
           b{
             color: orange;
             margin-top: 10%;
@@ -58,6 +61,17 @@
             &:nth-child(2){
               margin-bottom: 1%;
             }
+          }
+          &::-webkit-scrollbar{
+            background-color: transparent;
+          }
+          &::-webkit-scrollbar-thumb{
+            background-color: orange;
+            border-radius: 20px;
+          }
+          strong{
+            color: red;
+            margin-top: 3%;
           }
         }
       }

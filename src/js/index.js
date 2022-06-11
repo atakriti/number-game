@@ -97,7 +97,7 @@ function level1Fun() {
 level1Fun();
 // =================================== end level1 =====================
 // ============================ timecounter ================
-let timeVariable = 20
+let timeVariable = 12
 
 function timerFunction() {
   
@@ -157,7 +157,7 @@ function level2Fun() {
 level2Fun();
 // ==================== end Level2 ==========================
 // =============== level2 timer ==============
-let timeVariable2 = 15
+let timeVariable2 = 12
 
 function timerFunction2() {
   

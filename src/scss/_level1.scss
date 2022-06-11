@@ -22,6 +22,8 @@
        margin-bottom: 3%;
        font-size: 2rem;
        color: white;
+       position: sticky;
+       top: 0;
        .number,.number2,.number3{
         font-size: 2rem;
        }
@@ -35,7 +37,7 @@
        padding:1% 2%;
        line-height: 2;
        position: sticky;
-       top: 0;
+       top: 8%;
        p{
            font-size: 1.2rem;
            color: white;
