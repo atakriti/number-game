@@ -17,13 +17,13 @@ let resultSpan = document.querySelector(".resultSpan")
 // let movedElement2 = document.querySelector(".movedElement2")
 // ===================
 let level1 = document.querySelector(".level1")
-level1.style.display = "none"
+// level1.style.display = "none"
 let level2 = document.querySelector(".level2")
 level2.style.display = "none"
 let level3 = document.querySelector(".level3")
 level3.style.display  ="none"
 let welcomePage = document.querySelector(".welcome-page")
-// welcomePage.style.display = "none"
+welcomePage.style.display = "none"
 let loading = document.querySelector(".loading")
 loading.style.display = "none"
 let result = document.querySelector(".result")
@@ -35,7 +35,7 @@ let nextBtn = document.querySelector("#next")
 let nextBtn2 = document.querySelector("#next2")
 let nextBtn3 = document.querySelector("#next3")
 let timeOut = document.querySelector(".timeOut")
-timeOut.style.display = "none"
+// timeOut.style.display = "none"
 // ======================= level one Function ======================
 function level1Fun() {
   for (let i = 0; i < 25; i++) {

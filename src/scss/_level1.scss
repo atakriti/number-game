@@ -83,8 +83,7 @@
 // ======================= TIME OUT ==================
 .timeOut{
     height: 100vh;
-    position: absolute;
-   
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -140,9 +139,19 @@
                 color: white;
                 font-size: 2vw;
             }
-            .resultSpan{
-                color: white;
-                font-size: 4vw;
+            .resultPoints{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                .resultSpan{
+                    color: white;
+                    font-size: 4vw;
+                }
+                .points{
+                    color: white;
+                    font-size: 3vw;
+                }
             }
             p{
                 color: white;

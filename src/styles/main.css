@@ -149,7 +149,7 @@
 
 .timeOut {
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -201,9 +201,19 @@
   color: white;
   font-size: 2vw;
 }
-.result .result-container .result-inner .resultSpan {
+.result .result-container .result-inner .resultPoints {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.result .result-container .result-inner .resultPoints .resultSpan {
   color: white;
   font-size: 4vw;
+}
+.result .result-container .result-inner .resultPoints .points {
+  color: white;
+  font-size: 3vw;
 }
 .result .result-container .result-inner p {
   color: white;
