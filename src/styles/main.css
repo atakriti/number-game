@@ -50,7 +50,6 @@
   padding: 3.5% 1%;
   border-radius: 50%;
   font-size: 1vw;
-  background-color: transparent;
 }
 
 .loading {
@@ -152,23 +151,6 @@
   transition: 0.7s;
   background-color: darkred;
   color: white;
-}
-
-.level1 {
-  z-index: 10;
-}
-
-.level2 {
-  z-index: 15;
-}
-
-.level3 {
-  z-index: 20;
-}
-
-.result {
-  position: relative;
-  z-index: 100;
 }
 
 .timeOut {
