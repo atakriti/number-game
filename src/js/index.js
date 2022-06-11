@@ -41,6 +41,10 @@ loading4.style.display = "none"
 
 let result = document.querySelector(".result")
 result.style.display = "none"
+// ======================== instructions =====================
+let close = document.querySelector(".close")
+let instructions = document.querySelector(".instructions")
+// ================= end instructions ===================
 
 let yesBtn = document.getElementById("yesBtn")
 let nextBtn = document.querySelector("#next")
@@ -255,4 +259,10 @@ yesBtn.addEventListener("click", () => {
   // result.remove()
   // welcomePage.style.display = "block"
   document.location.reload(true)
+})
+
+
+// =================== close btn ==============
+close.addEventListener("click", () => {
+  instructions.remove()
 })

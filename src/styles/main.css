@@ -1,4 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+.instructions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.904);
+}
+.instructions .in-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instructions .in-container .inner-in {
+  color: white;
+  width: 50%;
+  background: linear-gradient(to right, black, darkred);
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+.instructions .in-container .inner-in button {
+  width: 10%;
+  padding: 1% 0;
+  border: 1px white solid;
+  background-color: transparent;
+  outline: none;
+  margin-bottom: 3%;
+  border-radius: 40px;
+  color: white;
+  font-weight: bold;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.instructions .in-container .inner-in button:hover {
+  transition: 0.7s;
+  background-color: skyblue;
+}
+.instructions .in-container .inner-in .in-text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2vw;
+}
+
 .welcome-page {
   height: 100vh;
   background-color: black;
@@ -89,7 +138,8 @@
 }
 .level1 h1 .userName, .level2 h1 .userName, .level3 h1 .userName {
   font-size: 1.8rem;
-  color: gray;
+  color: orange;
+  text-transform: uppercase;
 }
 .level1 h2, .level2 h2, .level3 h2 {
   text-align: center;
@@ -142,8 +192,8 @@
 }
 .level1 .container div:hover, .level1 .container2 div:hover, .level1 .container3 div:hover, .level2 .container div:hover, .level2 .container2 div:hover, .level2 .container3 div:hover, .level3 .container div:hover, .level3 .container2 div:hover, .level3 .container3 div:hover {
   transition: 0.7s;
-  background-color: gray;
-  color: white;
+  background-color: orange;
+  transform: scale(1.2);
 }
 .level1 #next, .level1 #next2, .level1 #next3, .level2 #next, .level2 #next2, .level2 #next3, .level3 #next, .level3 #next2, .level3 #next3 {
   background-color: white;

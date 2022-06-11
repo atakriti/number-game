@@ -13,7 +13,8 @@
        color: white;
     .userName{
         font-size: 1.8rem;
-        color: gray;
+        color: orange;
+        text-transform: uppercase;
     }
    }
    h2{
@@ -66,8 +67,8 @@
         transition: 0.7s;
         &:hover{
             transition: 0.7s;
-            background-color: gray;
-            color: white;
+            background-color: orange;
+            transform: scale(1.2);
         }
     }
 }
