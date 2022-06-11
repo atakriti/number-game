@@ -51,6 +51,9 @@
 .instructions .in-container .inner-in .in-text p {
   display: flex;
   flex-direction: column;
+  height: 20rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .instructions .in-container .inner-in .in-text p b {
   color: orange;
@@ -64,6 +67,17 @@
 }
 .instructions .in-container .inner-in .in-text p span:nth-child(2) {
   margin-bottom: 1%;
+}
+.instructions .in-container .inner-in .in-text p::-webkit-scrollbar {
+  background-color: transparent;
+}
+.instructions .in-container .inner-in .in-text p::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 20px;
+}
+.instructions .in-container .inner-in .in-text p strong {
+  color: red;
+  margin-top: 3%;
 }
 
 .welcome-page {
@@ -165,6 +179,8 @@
   margin-bottom: 3%;
   font-size: 2rem;
   color: white;
+  position: sticky;
+  top: 0;
 }
 .level1 h2 .number, .level1 h2 .number2, .level1 h2 .number3, .level2 h2 .number, .level2 h2 .number2, .level2 h2 .number3, .level3 h2 .number, .level3 h2 .number2, .level3 h2 .number3 {
   font-size: 2rem;
@@ -178,7 +194,7 @@
   padding: 1% 2%;
   line-height: 2;
   position: sticky;
-  top: 0;
+  top: 8%;
 }
 .level1 .timer-container p, .level1 .timer-container2 p, .level1 .timer-container3 p, .level2 .timer-container p, .level2 .timer-container2 p, .level2 .timer-container3 p, .level3 .timer-container p, .level3 .timer-container2 p, .level3 .timer-container3 p {
   font-size: 1.2rem;
