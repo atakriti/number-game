@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 .welcome-page {
-  min-height: 100vh;
+  height: 100vh;
+  background-color: black;
+}
+.welcome-page .welcome-inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  width: 100%;
+  height: 100%;
 }
-.welcome-page .welcome-container {
+.welcome-page .welcome-inner .welcome-container {
   width: 60%;
   background: linear-gradient(to right, black, darkred);
   border-radius: 30px;
@@ -15,43 +19,45 @@
   flex-direction: column;
   align-items: center;
 }
-.welcome-page .welcome-container h1 {
+.welcome-page .welcome-inner .welcome-container h1 {
   margin-bottom: 20%;
   font-size: 4vw;
   color: white;
 }
-.welcome-page .welcome-container h2 {
+.welcome-page .welcome-inner .welcome-container h2 {
   margin-bottom: 5%;
   font-size: 2vw;
   color: white;
 }
-.welcome-page .welcome-container form {
+.welcome-page .welcome-inner .welcome-container form {
   border: 1px gray solid;
   border-radius: 20px;
   width: 80%;
   display: flex;
   box-shadow: 2px 1px 5px rgb(92, 92, 92);
 }
-.welcome-page .welcome-container form input {
+.welcome-page .welcome-inner .welcome-container form input {
   background-color: transparent;
   outline: none;
   color: white;
 }
-.welcome-page .welcome-container form input:nth-child(1) {
+.welcome-page .welcome-inner .welcome-container form input:nth-child(1) {
   padding: 2% 4%;
   flex: 1;
   border: none;
 }
-.welcome-page .welcome-container form input:nth-child(2) {
+.welcome-page .welcome-inner .welcome-container form input:nth-child(2) {
   padding: 3.5% 1%;
   border-radius: 50%;
   font-size: 1vw;
+  background-color: transparent;
 }
 
 .loading {
   width: 100%;
   background-color: black;
   height: 100vh;
+  position: relative;
 }
 .loading .loading-container {
   width: 100%;
@@ -73,6 +79,7 @@
   background: linear-gradient(to right, black, darkred);
   padding-top: 5%;
   min-height: 100vh;
+  position: relative;
 }
 .level1 h1, .level2 h1, .level3 h1 {
   text-align: center;
@@ -145,6 +152,23 @@
   transition: 0.7s;
   background-color: darkred;
   color: white;
+}
+
+.level1 {
+  z-index: 10;
+}
+
+.level2 {
+  z-index: 15;
+}
+
+.level3 {
+  z-index: 20;
+}
+
+.result {
+  position: relative;
+  z-index: 100;
 }
 
 .timeOut {
