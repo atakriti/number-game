@@ -55,6 +55,12 @@
   color: orange;
   margin-top: 10%;
 }
+.instructions .in-container .inner-in .in-text p span {
+  color: orange;
+  font-weight: bold;
+  margin-bottom: 10%;
+  font-size: 2.5vw;
+}
 
 .welcome-page {
   height: 100vh;
