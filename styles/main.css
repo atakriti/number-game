@@ -187,7 +187,7 @@
 }
 .level1 .timer-container, .level1 .timer-container2, .level1 .timer-container3, .level2 .timer-container, .level2 .timer-container2, .level2 .timer-container3, .level3 .timer-container, .level3 .timer-container2, .level3 .timer-container3 {
   text-align: center;
-  width: 15rem;
+  width: 10rem;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.158);
   border-radius: 20px;
