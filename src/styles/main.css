@@ -39,13 +39,21 @@
 }
 .instructions .in-container .inner-in button:hover {
   transition: 0.7s;
-  background-color: skyblue;
+  background-color: orange;
 }
 .instructions .in-container .inner-in .in-text {
   width: 70%;
   margin: 0 auto;
   text-align: center;
   font-size: 2vw;
+}
+.instructions .in-container .inner-in .in-text p {
+  display: flex;
+  flex-direction: column;
+}
+.instructions .in-container .inner-in .in-text p b {
+  color: orange;
+  margin-top: 10%;
 }
 
 .welcome-page {
@@ -297,7 +305,7 @@
   font-size: 1.4vw;
 }
 .result .result-container .result-inner button:hover {
-  background-color: skyblue;
+  background-color: orange;
 }
 
 * {

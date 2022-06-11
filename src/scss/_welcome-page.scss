@@ -34,7 +34,7 @@
         cursor: pointer;
         &:hover{
           transition: 0.7s;
-          background-color: skyblue;
+          background-color: orange;
         }
       }
       .in-text{
@@ -42,6 +42,14 @@
         margin: 0 auto;
         text-align: center;
         font-size: 2vw;
+        p{
+          display: flex;
+          flex-direction: column;
+          b{
+            color: orange;
+            margin-top: 10%;
+          }
+        }
       }
     }
   }
