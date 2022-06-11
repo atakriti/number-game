@@ -218,7 +218,7 @@ function level3Fun() {
 level3Fun()
 // =========================== end level3 ==================
 // =============== level2 timer ==============
-let timeVariable3 = 15
+let timeVariable3 = 20
 
 function timerFunction3() {
   
