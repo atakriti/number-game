@@ -40,10 +40,9 @@ loading4.style.display = "none"
 
 
 let result = document.querySelector(".result")
-// result.style.display = "none"
+result.style.display = "none"
 
 let yesBtn = document.getElementById("yesBtn")
-let noBtn = document.getElementById("noBtn")
 let nextBtn = document.querySelector("#next")
 let nextBtn2 = document.querySelector("#next2")
 let nextBtn3 = document.querySelector("#next3")
@@ -93,7 +92,7 @@ function level1Fun() {
 level1Fun();
 // =================================== end level1 =====================
 // ============================ timecounter ================
-let timeVariable = 2
+let timeVariable = 10
 
 function timerFunction() {
   
@@ -103,7 +102,7 @@ function timerFunction() {
   if (strong.innerHTML == 0) {
     strong.remove()
      timeOut.style.display = "block"
-     setTimeout(() => (timeOut.style.display = "none"),2000)
+     setTimeout(() => (timeOut.style.display = "none"),1000)
        // timerVar = 5
    }
  
@@ -152,7 +151,7 @@ function level2Fun() {
 level2Fun();
 // ==================== end Level2 ==========================
 // =============== level2 timer ==============
-let timeVariable2 = 5
+let timeVariable2 = 12
 
 function timerFunction2() {
   
@@ -162,7 +161,7 @@ function timerFunction2() {
   if (strong2.innerHTML == 0) {
     strong2.remove()
      timeOut.style.display = "block"
-    setTimeout(() => (timeOut.style.display = "none"), 2000)
+    setTimeout(() => (timeOut.style.display = "none"), 1000)
     
        // timerVar = 5
    }
@@ -213,7 +212,7 @@ function level3Fun() {
 level3Fun()
 // =========================== end level3 ==================
 // =============== level2 timer ==============
-let timeVariable3 = 5
+let timeVariable3 = 15
 
 function timerFunction3() {
   
@@ -223,7 +222,7 @@ function timerFunction3() {
   if (strong3.innerHTML == 0) {
     strong3.remove()
      timeOut.style.display = "block"
-     setTimeout(() => (timeOut.style.display = "none"),2000)
+     setTimeout(() => (timeOut.style.display = "none"),1000)
        // timerVar = 5
    }
  
@@ -246,14 +245,14 @@ function welcome(e) {
       welcomePage.style.display = "none"
       loading.style.display = "block"
       setTimeout(() => (loading.style.display = "none"), 5000)
-      setTimeout(() => (level1.style.display = "block"), 5000)
-      
+    setTimeout(() => (level1.style.display = "block"), 5000)
   }
 }
 document.getElementById("formWelcome").addEventListener("submit", welcome)
 
 // ========================= Result ======================
 yesBtn.addEventListener("click", () => {
-  result.remove()
-  welcomePage.style.display = "block"
+  // result.remove()
+  // welcomePage.style.display = "block"
+  document.location.reload(true)
 })

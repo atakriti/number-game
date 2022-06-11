@@ -108,6 +108,8 @@
   border-radius: 20px;
   padding: 1% 2%;
   line-height: 2;
+  position: sticky;
+  top: 0;
 }
 .level1 .timer-container p, .level1 .timer-container2 p, .level1 .timer-container3 p, .level2 .timer-container p, .level2 .timer-container2 p, .level2 .timer-container3 p, .level3 .timer-container p, .level3 .timer-container2 p, .level3 .timer-container3 p {
   font-size: 0.9rem;
@@ -187,6 +189,8 @@
 
 .result {
   height: 100vh;
+  position: relative;
+  z-index: 60;
   background-color: black;
 }
 .result .result-container {
@@ -229,29 +233,21 @@
   color: white;
   font-size: 3vw;
 }
-.result .result-container .result-inner p {
-  color: white;
-  font-size: 1.5vw;
-}
 .result .result-container .result-inner button {
   background-color: transparent;
   border: 1px white solid;
-  padding: 3% 0%;
-  width: 50%;
+  padding: 5% 0%;
+  width: 100%;
   margin-bottom: 3%;
   border-radius: 5px;
   outline: none;
   cursor: pointer;
   transition: 0.7s;
   color: white;
+  font-size: 1.4vw;
 }
-.result .result-container .result-inner button:nth-child(5):hover {
-  background-color: green;
-  transition: 0.7s;
-}
-.result .result-container .result-inner button:nth-child(6):hover {
-  background-color: red;
-  transition: 0.7s;
+.result .result-container .result-inner button:hover {
+  background-color: skyblue;
 }
 
 * {
