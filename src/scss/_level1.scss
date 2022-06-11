@@ -1,8 +1,11 @@
+
+
 .level1,.level2,.level3{
     // background-color: black;
     background: linear-gradient(to right, black, darkred);
     padding-top: 5%;
     min-height: 100vh;
+    position: relative;
    h1{
        text-align: center;
        margin-bottom: 3%;
@@ -86,6 +89,20 @@
 
 }
 
+// .level1{
+//     z-index: 10;
+// }
+// .level2{
+//     z-index: 15;
+// }
+// .level3{
+//     z-index: 20;
+// }
+// .result{
+//     position: relative;
+//     z-index: 100;
+// }
+
 // ======================= TIME OUT ==================
 .timeOut{
     height: 100vh;
@@ -94,6 +111,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+z-index: 5;
    .timeOut-inner{
        height: 100%;
     display: flex;

@@ -23,9 +23,22 @@ level2.style.display = "none"
 let level3 = document.querySelector(".level3")
 level3.style.display  ="none"
 let welcomePage = document.querySelector(".welcome-page")
-welcomePage.style.display = "none"
+// welcomePage.style.display = "none"
 let loading = document.querySelector(".loading")
 loading.style.display = "none"
+
+let loading2 = document.querySelector(".loading2")
+loading2.style.display = "none"
+
+let loading3 = document.querySelector(".loading3")
+loading3.style.display = "none"
+
+let loading4 = document.querySelector(".loading4")
+loading4.style.display = "none"
+
+
+
+
 let result = document.querySelector(".result")
 // result.style.display = "none"
 
@@ -66,16 +79,21 @@ function level1Fun() {
   }
 
   nextBtn.addEventListener("click", () => {
-    document.querySelector(".level1").style.display = "none"
-    document.querySelector(".loading").style.display = "block"
-    setTimeout(() => (document.querySelector(".loading").style.display = "none"), 5000)
+    document.querySelector(".level1").remove()
+    loading2.style.display = "block"
+
+    setTimeout(() => {
+     loading2.style.display = "none"
+
+    }, 5000)
+    
     setTimeout(() => (document.querySelector(".level2").style.display = "block"), 5000)
   })
 }
 level1Fun();
 // =================================== end level1 =====================
 // ============================ timecounter ================
-let timeVariable = 20
+let timeVariable = 2
 
 function timerFunction() {
   
@@ -85,7 +103,7 @@ function timerFunction() {
   if (strong.innerHTML == 0) {
     strong.remove()
      timeOut.style.display = "block"
-     setTimeout(() => (timeOut.style.display = "none"),5000)
+     setTimeout(() => (timeOut.style.display = "none"),2000)
        // timerVar = 5
    }
  
@@ -124,9 +142,9 @@ function level2Fun() {
   }
 
   nextBtn2.addEventListener("click", () => {
-    document.querySelector(".level2").style.display = "none"
-    document.querySelector(".loading").style.display = "block"
-    setTimeout(() => (document.querySelector(".loading").style.display = "none"), 5000)
+    document.querySelector(".level2").remove()
+    loading3.style.display = "block"
+    setTimeout(() => (loading3.style.display = "none"), 5000)
     setTimeout(() => (document.querySelector(".level3").style.display = "block"), 5000)
 
   })
@@ -134,7 +152,7 @@ function level2Fun() {
 level2Fun();
 // ==================== end Level2 ==========================
 // =============== level2 timer ==============
-let timeVariable2 = 15
+let timeVariable2 = 5
 
 function timerFunction2() {
   
@@ -144,7 +162,7 @@ function timerFunction2() {
   if (strong2.innerHTML == 0) {
     strong2.remove()
      timeOut.style.display = "block"
-    setTimeout(() => (timeOut.style.display = "none"), 5000)
+    setTimeout(() => (timeOut.style.display = "none"), 2000)
     
        // timerVar = 5
    }
@@ -185,9 +203,9 @@ function level3Fun() {
     })
   }
   nextBtn3.addEventListener("click", () => {
-    document.querySelector(".level3").style.display = "none"
-    document.querySelector(".loading").style.display = "block"
-    setTimeout(() => (document.querySelector(".loading").style.display = "none"), 5000)
+    document.querySelector(".level3").remove()
+   loading4.style.display = "block"
+    setTimeout(() => (loading4.style.display = "none"), 5000)
     setTimeout(() => (result.style.display = "block"), 5000)
 
   })
@@ -195,7 +213,7 @@ function level3Fun() {
 level3Fun()
 // =========================== end level3 ==================
 // =============== level2 timer ==============
-let timeVariable3 = 13
+let timeVariable3 = 5
 
 function timerFunction3() {
   
@@ -205,7 +223,7 @@ function timerFunction3() {
   if (strong3.innerHTML == 0) {
     strong3.remove()
      timeOut.style.display = "block"
-     setTimeout(() => (timeOut.style.display = "none"),5000)
+     setTimeout(() => (timeOut.style.display = "none"),2000)
        // timerVar = 5
    }
  
@@ -235,7 +253,7 @@ function welcome(e) {
 document.getElementById("formWelcome").addEventListener("submit", welcome)
 
 // ========================= Result ======================
-// yesBtn.addEventListener("click", () => {
-//   result.remove()
-//   welcomePage.style.display = "block"
-// })
+yesBtn.addEventListener("click", () => {
+  result.remove()
+  welcomePage.style.display = "block"
+})
