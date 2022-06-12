@@ -87,6 +87,7 @@
     cursor: pointer;
     transition: 0.7s;
     font-size: 1.6rem;
+     display: none;//  ========================
     &:hover{
         transition: 0.7s;
         background-color: darkred;

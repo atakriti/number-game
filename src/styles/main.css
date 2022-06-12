@@ -242,6 +242,7 @@
   cursor: pointer;
   transition: 0.7s;
   font-size: 1.6rem;
+  display: none;
 }
 .level1 #next:hover, .level1 #next2:hover, .level1 #next3:hover, .level2 #next:hover, .level2 #next2:hover, .level2 #next3:hover, .level3 #next:hover, .level3 #next2:hover, .level3 #next3:hover {
   transition: 0.7s;
