@@ -82,22 +82,22 @@ function level1Fun() {
     
   }
 
-  nextBtn.addEventListener("click", () => {
-    document.querySelector(".level1").remove()
-    loading2.style.display = "block"
+  // nextBtn.addEventListener("click", () => {
+  //   document.querySelector(".level1").remove()
+  //   loading2.style.display = "block"
 
-    setTimeout(() => {
-     loading2.style.display = "none"
+  //   setTimeout(() => {
+  //    loading2.style.display = "none"
 
-    }, 5000)
+  //   }, 5000)
     
-    setTimeout(() => (document.querySelector(".level2").style.display = "block"), 5000)
-  })
+  //   setTimeout(() => (document.querySelector(".level2").style.display = "block"), 5000)
+  // })
 }
 level1Fun();
 // =================================== end level1 =====================
 // ============================ timecounter ================
-let timeVariable = 12
+let timeVariable = 10
 
 function timerFunction() {
   
@@ -108,7 +108,12 @@ function timerFunction() {
     strong.remove()
      timeOut.style.display = "block"
      setTimeout(() => (timeOut.style.display = "none"),1000)
-     setTimeout(() => (container.style.display = "none"),1000)
+    setTimeout(() => (container.style.display = "none"), 1000)
+    // ======= go to next level
+     setTimeout(() => (level1.style.display = "none"),1000)
+     setTimeout(() => (loading.style.display = "block"),1000)
+     setTimeout(() => (loading.style.display = "none"),3000)
+     setTimeout(() => (level2.style.display = "block"),3000)
        // timerVar = 5
    }
  
@@ -146,18 +151,18 @@ function level2Fun() {
     })
   }
 
-  nextBtn2.addEventListener("click", () => {
-    document.querySelector(".level2").remove()
-    loading3.style.display = "block"
-    setTimeout(() => (loading3.style.display = "none"), 5000)
-    setTimeout(() => (document.querySelector(".level3").style.display = "block"), 5000)
+  // nextBtn2.addEventListener("click", () => {
+  //   document.querySelector(".level2").remove()
+  //   loading3.style.display = "block"
+  //   setTimeout(() => (loading3.style.display = "none"), 5000)
+  //   setTimeout(() => (document.querySelector(".level3").style.display = "block"), 5000)
 
-  })
+  // })
 }
 level2Fun();
 // ==================== end Level2 ==========================
 // =============== level2 timer ==============
-let timeVariable2 = 12
+let timeVariable2 = 13
 
 function timerFunction2() {
   
@@ -167,8 +172,13 @@ function timerFunction2() {
   if (strong2.innerHTML == 0) {
     strong2.remove()
      timeOut.style.display = "block"
-    setTimeout(() => (timeOut.style.display = "none"), 2000)
-    setTimeout(() => (container2.style.display = "none"),2000)
+    setTimeout(() => (timeOut.style.display = "none"), 1000)
+    setTimeout(() => (container2.style.display = "none"), 1000)
+    // ======= go to next level
+    setTimeout(() => (level2.style.display = "none"),1000)
+    setTimeout(() => (loading.style.display = "block"),1000)
+    setTimeout(() => (loading.style.display = "none"),3000)
+    setTimeout(() => (level3.style.display = "block"),3000)
 
     
        // timerVar = 5
@@ -207,17 +217,17 @@ function level3Fun() {
       }
     })
   }
-  nextBtn3.addEventListener("click", () => {
-    document.querySelector(".level3").remove()
-   loading4.style.display = "block"
-    setTimeout(() => (loading4.style.display = "none"), 5000)
-    setTimeout(() => (result.style.display = "block"), 5000)
+  // nextBtn3.addEventListener("click", () => {
+  //   document.querySelector(".level3").remove()
+  //  loading4.style.display = "block"
+  //   setTimeout(() => (loading4.style.display = "none"), 5000)
+  //   setTimeout(() => (result.style.display = "block"), 5000)
 
-  })
+  // })
 }
 level3Fun()
 // =========================== end level3 ==================
-// =============== level2 timer ==============
+// =============== level2 timer ============================
 let timeVariable3 = 20
 
 function timerFunction3() {
@@ -228,8 +238,13 @@ function timerFunction3() {
   if (strong3.innerHTML == 0) {
     strong3.remove()
      timeOut.style.display = "block"
-    setTimeout(() => (timeOut.style.display = "none"), 2000)
-    setTimeout(() => (container3.style.display = "none"),2000)
+    setTimeout(() => (timeOut.style.display = "none"), 1000)
+    setTimeout(() => (container3.style.display = "none"), 1000)
+    // ======= go to next level
+    setTimeout(() => (level3.style.display = "none"),1000)
+    setTimeout(() => (loading.style.display = "block"),1000)
+    setTimeout(() => (loading.style.display = "none"),3000)
+    setTimeout(() => (result.style.display = "block"),3000)
     
        // timerVar = 5
    }
