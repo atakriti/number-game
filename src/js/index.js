@@ -23,7 +23,7 @@ level2.style.display = "none"
 let level3 = document.querySelector(".level3")
 level3.style.display  ="none"
 let welcomePage = document.querySelector(".welcome-page")
-welcomePage.style.display = "none"
+// welcomePage.style.display = "none"
 let loading = document.querySelector(".loading")
 loading.style.display = "none"
 
@@ -40,11 +40,11 @@ loading4.style.display = "none"
 
 
 let result = document.querySelector(".result")
-// result.style.display = "none"
+result.style.display = "none"
 // ======================== instructions =====================
 let close = document.querySelector(".close")
 let instructions = document.querySelector(".instructions")
-instructions.style.display = "none"
+// instructions.style.display = "none"
 // ================= end instructions ===================
 
 let yesBtn = document.getElementById("yesBtn")
