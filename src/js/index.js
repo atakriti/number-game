@@ -61,7 +61,7 @@ result.style.display = "none"
 // ======================== instructions =====================
 let close = document.querySelector(".close")
 let instructions = document.querySelector(".instructions")
-instructions.style.display = "none"
+// instructions.style.display = "none"
 // ================= end instructions ===================
 
 let yesBtn = document.getElementById("yesBtn")
