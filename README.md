@@ -1,4 +1,4 @@
-# Numbers game
+# Numbers game with 3 levels
 
 ## Responsive for Mobiles and Desktops
 
@@ -57,7 +57,7 @@
 ### Contact
 
 Mail: <anwart256@gmail.com><br>
-GitHub: [yourGHName](https://github.com/atakriti)<br>
+GitHub: [atakriti](https://github.com/atakriti)<br>
 LinkedIn: [your linkedIn](#)
 
 ---
