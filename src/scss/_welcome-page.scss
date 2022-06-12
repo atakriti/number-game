@@ -13,7 +13,7 @@
     align-items: center;
     .inner-in{
       color: white;
-      width: 50%;
+      width: 50rem;
       background: linear-gradient(to right, black,darkred);
       padding: 1%;
       display: flex;
@@ -31,7 +31,7 @@
         color: white;
         font-weight: bold;
         transition: 0.7s;
-        font-size: 1.5vw;
+        font-size: 1.5rem;
         cursor: pointer;
         &:hover{
           transition: 0.7s;
@@ -42,7 +42,7 @@
         width: 70%;
         margin: 0 auto;
         text-align: center;
-        font-size: 2vw;
+        font-size: 1.5rem;
         p{
           display: flex;
           flex-direction: column;
@@ -57,7 +57,7 @@
             color: orange;
             font-weight: bold;
             margin-bottom: 10%;
-            font-size: 2.5vw;
+            font-size: 2.4rem;
             &:nth-child(2){
               margin-bottom: 1%;
             }
@@ -81,7 +81,7 @@
 
 
 
-
+// ================= Welcome page =================
 
 
 .welcome-page {
