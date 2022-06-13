@@ -341,7 +341,8 @@ function level5Fun() {
       }
       if (empty5 === e.target.innerText) {
         movedElement.appendChild(div)
-        resultSpan.innerHTML = movedElement.innerHTML.length
+        // resultSpan.innerHTML = movedElement.innerHTML.length
+        resultSpan.innerHTML = movedElement.childElementCount
 
       } else {
         span5.innerHTML = "Wrong!, try again";
