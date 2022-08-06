@@ -1,4 +1,4 @@
-# Numbers game with 3 levels
+# Numbers game with 5 levels
 
 ## Responsive for Mobiles and Desktops
 
